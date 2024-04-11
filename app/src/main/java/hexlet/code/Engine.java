@@ -1,18 +1,17 @@
 package hexlet.code;
 
-import java.util.Random;
+import hexlet.code.games.Greet;
 
-public class Even {
-    public static void playEven(String userName) {
-        System.out.println("Answer 'yes' if the number is even, otherwise answer 'no'.");
-
-        Random random = new Random();
+public class Engine {
+    public static void runGame(String inviteText, String[] questions, String[] answers) {
+        String userName = Greet.showGreet();
+        System.out.println(inviteText);
 
         for (int i = 0; i < 3; i++) {
-            int currentNum = random.nextInt(100);
-            String correctAnswer = currentNum % 2 == 0 ? "yes" : "no";
+            String question = questions[i];
+            String correctAnswer = answers[i];
 
-            System.out.println("Question: " + currentNum);
+            System.out.println("Question: " + question);
             System.out.print("Your answer: ");
             String userAnswer = Cli.getUserInput();
 
