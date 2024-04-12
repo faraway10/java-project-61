@@ -19,10 +19,12 @@ public class App {
                 Greet.showGreet();
                 break;
             case "2":
-                Even.playEven();
+                Even even = new Even();
+                Engine.runGame(even);
                 break;
             case "3":
-                Calc.playCalc();
+                Calc calc = new Calc();
+                Engine.runGame(calc);
                 break;
             case "0":
                 return;
