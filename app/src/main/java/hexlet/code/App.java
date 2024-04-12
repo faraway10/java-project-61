@@ -1,9 +1,10 @@
 package hexlet.code;
 
-import hexlet.code.games.Calc;
-import hexlet.code.games.Even;
-import hexlet.code.games.GCD;
 import hexlet.code.games.Greet;
+import hexlet.code.games.Even;
+import hexlet.code.games.Calc;
+import hexlet.code.games.GCD;
+import hexlet.code.games.Progression;
 
 public class App {
     public static void main(String[] args) {
@@ -12,6 +13,7 @@ public class App {
         System.out.println("2 - Even");
         System.out.println("3 - Calc");
         System.out.println("4 - GCD");
+        System.out.println("5 - Progression");
         System.out.println("0 - Exit");
         String choice = Cli.getUserInput();
         System.out.println("Your choice: " + choice + "\n");
@@ -31,6 +33,10 @@ public class App {
             case "4":
                 GCD gcd = new GCD();
                 Engine.runGame(gcd);
+                break;
+            case "5":
+                Progression progression = new Progression();
+                Engine.runGame(progression);
                 break;
             case "0":
                 return;
