@@ -9,6 +9,8 @@ import hexlet.code.games.Prime;
 
 public class App {
     public static void main(String[] args) {
+        int questCount = 3;
+
         System.out.println("Please enter the game number and press Enter.");
         System.out.println("1 - Greet");
         System.out.println("2 - Even");
@@ -25,24 +27,19 @@ public class App {
                 Greet.showGreet();
                 break;
             case "2":
-                Even even = new Even();
-                Engine.runGame(even);
+                Even.runGame(questCount);
                 break;
             case "3":
-                Calc calc = new Calc();
-                Engine.runGame(calc);
+                Calc.runGame(questCount);
                 break;
             case "4":
-                GCD gcd = new GCD();
-                Engine.runGame(gcd);
+                GCD.runGame(questCount);
                 break;
             case "5":
-                Progression progression = new Progression();
-                Engine.runGame(progression);
+                Progression.runGame(questCount);
                 break;
             case "6":
-                Prime prime = new Prime();
-                Engine.runGame(prime);
+                Prime.runGame(questCount);
                 break;
             case "0":
                 return;

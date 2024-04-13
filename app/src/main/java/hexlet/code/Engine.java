@@ -3,14 +3,13 @@ package hexlet.code;
 import hexlet.code.games.Greet;
 
 public class Engine {
-    public static void runGame(QuizGenerator quizGen) {
+    public static void runGame(String inviteText, String[] questions, String[] answers) {
         String userName = Greet.showGreet();
-        System.out.println(quizGen.getInviteText());
+        System.out.println(inviteText);
 
-        for (int i = 0; i < 3; i++) {
-            quizGen.generateNextTest();
-            String question = quizGen.getQuestion();
-            String correctAnswer = quizGen.getAnswer();
+        for (int i = 0; i < questions.length; i++) {
+            String question = questions[i];
+            String correctAnswer = answers[i];
 
             System.out.println("Question: " + question);
             System.out.print("Your answer: ");

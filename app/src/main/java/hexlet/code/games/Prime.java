@@ -1,38 +1,31 @@
 package hexlet.code.games;
 
-import hexlet.code.QuizGenerator;
+import hexlet.code.Engine;
 
 import java.util.Random;
 
-public class Prime implements QuizGenerator {
-    private String question;
-    private String answer;
-    private final Random random = new Random();
+public class Prime {
+    public static void runGame(int questCount) {
+        String[] questions = new String[questCount];
+        String[] answers = new String[questCount];
 
-    public String getInviteText() {
-        return "Answer 'yes' if given number is prime. Otherwise answer 'no'.";
-    }
+        for (var i = 0; i < questCount; i++) {
+            Random random = new Random();
+            int num = random.nextInt(100);
+            boolean isPrime = num >= 2;
 
-    public void generateNextTest() {
-        int num = random.nextInt(100);
-        boolean isPrime = num >= 2;
-
-        for (var i = 2; i <= num / 2; i++) {
-            if (num % i == 0) {
-                isPrime = false;
-                break;
+            for (var n = 2; n <= num / 2; n++) {
+                if (num % n == 0) {
+                    isPrime = false;
+                    break;
+                }
             }
+
+            questions[i] = String.valueOf(num);
+            answers[i] = isPrime ? "yes" : "no";
         }
 
-        this.question = String.valueOf(num);
-        this.answer = isPrime ? "yes" : "no";
-    }
-
-    public String getQuestion() {
-        return question;
-    }
-
-    public String getAnswer() {
-        return answer;
+        String inviteText = "Answer 'yes' if given number is prime. Otherwise answer 'no'.";
+        Engine.runGame(inviteText, questions, answers);
     }
 }

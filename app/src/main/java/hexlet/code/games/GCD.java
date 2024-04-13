@@ -1,32 +1,25 @@
 package hexlet.code.games;
 
-import hexlet.code.QuizGenerator;
+import hexlet.code.Engine;
 
 import java.util.Random;
 
-public class GCD implements QuizGenerator {
-    private String question;
-    private String answer;
-    private final Random random = new Random();
+public class GCD {
+    public static void runGame(int questCount) {
+        String[] questions = new String[questCount];
+        String[] answers = new String[questCount];
 
-    public String getInviteText() {
-        return "Find the greatest common divisor of given numbers.";
-    }
+        for (var i = 0; i < questCount; i++) {
+            Random random = new Random();
+            int firstNum = random.nextInt(100);
+            int secondNum = random.nextInt(99) + 1;
+            int gcd = gcd(firstNum, secondNum);
+            questions[i] = firstNum + " " + secondNum;
+            answers[i] = String.valueOf(gcd);
+        }
 
-    public void generateNextTest() {
-        int firstNum = random.nextInt(100);
-        int secondNum = random.nextInt(99) + 1;
-        int gcd = gcd(firstNum, secondNum);
-        question = firstNum + " " + secondNum;
-        answer = String.valueOf(gcd);
-    }
-
-    public String getQuestion() {
-        return question;
-    }
-
-    public String getAnswer() {
-        return answer;
+        String inviteText = "Find the greatest common divisor of given numbers.";
+        Engine.runGame(inviteText, questions, answers);
     }
 
     private static int gcd(int a, int b) {
