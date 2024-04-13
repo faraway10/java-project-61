@@ -1,10 +1,8 @@
 package hexlet.code;
 
-import hexlet.code.games.Greet;
-
 public class Engine {
     public static void runGame(String inviteText, String[] questions, String[] answers) {
-        String userName = Greet.showGreet();
+        String userName = App.showGreet();
         System.out.println(inviteText);
 
         for (int i = 0; i < questions.length; i++) {

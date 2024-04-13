@@ -14,22 +14,28 @@ public class Calc {
             int firstNum = random.nextInt(100);
             int secondNum = random.nextInt(100);
             int operationCode = random.nextInt(3);
+            String operation;
+            int result;
 
             switch (operationCode) {
                 case 0:
-                    questions[i] = firstNum + " + " + secondNum;
-                    answers[i] = String.valueOf(firstNum + secondNum);
+                    operation = " + ";
+                    result = firstNum + secondNum;
                     break;
                 case 1:
-                    questions[i] = firstNum + " - " + secondNum;
-                    answers[i] = String.valueOf(firstNum - secondNum);
+                    operation = " - ";
+                    result = firstNum - secondNum;
                     break;
                 default:
                     secondNum /= 10;
-                    questions[i] = firstNum + " * " + secondNum;
-                    answers[i] = String.valueOf(firstNum * secondNum);
+                    operation = " * ";
+                    result = firstNum * secondNum;
                     break;
             }
+
+            questions[i] = firstNum + operation + secondNum;
+            answers[i] = String.valueOf(result);
+
         }
 
         String inviteText = "What is the result of the expression?";
