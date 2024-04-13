@@ -9,12 +9,16 @@ public class Progression {
     public static void runGame(int roundCount, int maxRandVal) {
         String[] questions = new String[roundCount];
         String[] answers = new String[roundCount];
+        final int minProgressionLen = 5;
+        final int maxProgressionLen = 10;
+        final int minStepVal = 2;
+        final int maxStepVal = 9;
 
         for (var i = 0; i < roundCount; i++) {
             Random random = new Random();
-            int len = random.nextInt(6) + 5;
+            int len = getRandomIntInRange(minProgressionLen, maxProgressionLen);
             int initNum = random.nextInt(maxRandVal);
-            int step = random.nextInt(8) + 2;
+            int step = getRandomIntInRange(minStepVal, maxStepVal);
             int questNumIndex = random.nextInt(len);
 
             questions[i] = getProgressionString(len, initNum, step, questNumIndex);
@@ -25,7 +29,7 @@ public class Progression {
         Engine.runGame(inviteText, questions, answers);
     }
 
-    public static String getProgressionString(int len, int initNum, int step, int questNumIndex) {
+    private static String getProgressionString(int len, int initNum, int step, int questNumIndex) {
         StringJoiner joiner = new StringJoiner(" ");
 
         for (var n = 0; n < len; n++) {
@@ -38,5 +42,10 @@ public class Progression {
         }
 
         return joiner.toString();
+    }
+
+    private static int getRandomIntInRange(int startNum, int endNum) {
+        Random random = new Random();
+        return startNum + random.nextInt(endNum - startNum + 1);
     }
 }

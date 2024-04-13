@@ -9,6 +9,7 @@ public class Calc {
         String[] questions = new String[roundCount];
         String[] answers = new String[roundCount];
         final int maxOperationCodeVal = 3;
+        final int secondNumDecreaseVal = 10;
 
         for (var i = 0; i < roundCount; i++) {
             Random random = new Random();
@@ -28,7 +29,7 @@ public class Calc {
                     result = firstNum - secondNum;
                     break;
                 default:
-                    secondNum /= 10;
+                    secondNum /= secondNumDecreaseVal;
                     operation = " * ";
                     result = firstNum * secondNum;
                     break;
