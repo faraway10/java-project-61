@@ -5,13 +5,13 @@ import hexlet.code.Engine;
 import java.util.Random;
 
 public class Even {
-    public static void runGame(int roundCount) {
+    public static void runGame(int roundCount, int maxRandVal) {
         String[] questions = new String[roundCount];
         String[] answers = new String[roundCount];
 
         for (var i = 0; i < roundCount; i++) {
             Random random = new Random();
-            int currentNum = random.nextInt(100);
+            int currentNum = random.nextInt(maxRandVal);
             questions[i] = String.valueOf(currentNum);
             answers[i] = currentNum % 2 == 0 ? "yes" : "no";
         }

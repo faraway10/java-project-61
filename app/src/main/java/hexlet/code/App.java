@@ -26,26 +26,27 @@ public class App {
     }
 
     public static void runGameByUserChoice(String userChoice) {
-        int roundCount = 3;
+        final int roundCount = 3;
+        final int maxRandVal = 100;
 
         switch (userChoice) {
             case "1":
                 showGreet();
                 break;
             case "2":
-                Even.runGame(roundCount);
+                Even.runGame(roundCount, maxRandVal);
                 break;
             case "3":
-                Calc.runGame(roundCount);
+                Calc.runGame(roundCount, maxRandVal);
                 break;
             case "4":
-                GCD.runGame(roundCount);
+                GCD.runGame(roundCount, maxRandVal);
                 break;
             case "5":
-                Progression.runGame(roundCount);
+                Progression.runGame(roundCount, maxRandVal);
                 break;
             case "6":
-                Prime.runGame(roundCount);
+                Prime.runGame(roundCount, maxRandVal);
                 break;
             case "0":
                 return;

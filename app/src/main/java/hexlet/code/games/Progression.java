@@ -6,14 +6,14 @@ import java.util.Random;
 import java.util.StringJoiner;
 
 public class Progression {
-    public static void runGame(int roundCount) {
+    public static void runGame(int roundCount, int maxRandVal) {
         String[] questions = new String[roundCount];
         String[] answers = new String[roundCount];
 
         for (var i = 0; i < roundCount; i++) {
             Random random = new Random();
             int len = random.nextInt(6) + 5;
-            int initNum = random.nextInt(100);
+            int initNum = random.nextInt(maxRandVal);
             int step = random.nextInt(8) + 2;
             int questNumIndex = random.nextInt(len);
 

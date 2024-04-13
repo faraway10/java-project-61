@@ -5,15 +5,16 @@ import hexlet.code.Engine;
 import java.util.Random;
 
 public class Calc {
-    public static void runGame(int roundCount) {
+    public static void runGame(int roundCount, int maxRandVal) {
         String[] questions = new String[roundCount];
         String[] answers = new String[roundCount];
+        final int maxOperationCodeVal = 3;
 
         for (var i = 0; i < roundCount; i++) {
             Random random = new Random();
-            int firstNum = random.nextInt(100);
-            int secondNum = random.nextInt(100);
-            int operationCode = random.nextInt(3);
+            int firstNum = random.nextInt(maxRandVal);
+            int secondNum = random.nextInt(maxRandVal);
+            int operationCode = random.nextInt(maxOperationCodeVal);
             String operation;
             int result;
 

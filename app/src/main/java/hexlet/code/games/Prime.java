@@ -5,13 +5,13 @@ import hexlet.code.Engine;
 import java.util.Random;
 
 public class Prime {
-    public static void runGame(int roundCount) {
+    public static void runGame(int roundCount, int maxRandVal) {
         String[] questions = new String[roundCount];
         String[] answers = new String[roundCount];
 
         for (var i = 0; i < roundCount; i++) {
             Random random = new Random();
-            int num = random.nextInt(100);
+            int num = random.nextInt(maxRandVal);
 
             questions[i] = String.valueOf(num);
             answers[i] = checkNumberIsPrime(num) ? "yes" : "no";
