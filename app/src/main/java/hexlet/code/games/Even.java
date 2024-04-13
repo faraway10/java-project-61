@@ -15,7 +15,7 @@ public class Even implements QuizGenerator {
 
     public void generateNextTest() {
         int currentNum = random.nextInt(100);
-        this.question = currentNum + "";
+        this.question = String.valueOf(currentNum);
         this.answer = currentNum % 2 == 0 ? "yes" : "no";
     }
 

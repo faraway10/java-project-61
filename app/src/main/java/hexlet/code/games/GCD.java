@@ -18,7 +18,7 @@ public class GCD implements QuizGenerator {
         int secondNum = random.nextInt(99) + 1;
         int gcd = gcd(firstNum, secondNum);
         question = firstNum + " " + secondNum;
-        answer = gcd + "";
+        answer = String.valueOf(gcd);
     }
 
     public String getQuestion() {

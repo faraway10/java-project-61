@@ -20,16 +20,16 @@ public class Calc implements QuizGenerator {
         switch (operationCode) {
             case 0:
                 question = firstNum + " + " + secondNum;
-                answer = firstNum + secondNum + "";
+                answer = String.valueOf(firstNum + secondNum);
                 break;
             case 1:
                 question = firstNum + " - " + secondNum;
-                answer = firstNum - secondNum + "";
+                answer = String.valueOf(firstNum - secondNum);
                 break;
             default:
                 secondNum /= 10;
                 question = firstNum + " * " + secondNum;
-                answer = firstNum * secondNum + "";
+                answer = String.valueOf(firstNum * secondNum);
                 break;
         }
     }
