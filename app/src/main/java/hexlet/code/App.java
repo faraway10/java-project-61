@@ -8,36 +8,9 @@ import hexlet.code.games.Prime;
 
 public class App {
     public static void main(String[] args) {
-        int questCount = 3;
-
         showGameMenu();
-        String choice = Cli.getUserInput();
-
-        switch (choice) {
-            case "1":
-                showGreet();
-                break;
-            case "2":
-                Even.runGame(questCount);
-                break;
-            case "3":
-                Calc.runGame(questCount);
-                break;
-            case "4":
-                GCD.runGame(questCount);
-                break;
-            case "5":
-                Progression.runGame(questCount);
-                break;
-            case "6":
-                Prime.runGame(questCount);
-                break;
-            case "0":
-                return;
-            default:
-                System.out.println("\nIncorrect input!");
-                break;
-        }
+        String userChoice = Cli.getUserInput();
+        runGameByUserChoice(userChoice);
     }
 
     public static void showGameMenu() {
@@ -50,6 +23,36 @@ public class App {
         System.out.println("6 - Prime");
         System.out.println("0 - Exit");
         System.out.print("Your choice: ");
+    }
+
+    public static void runGameByUserChoice(String userChoice) {
+        int roundCount = 3;
+
+        switch (userChoice) {
+            case "1":
+                showGreet();
+                break;
+            case "2":
+                Even.runGame(roundCount);
+                break;
+            case "3":
+                Calc.runGame(roundCount);
+                break;
+            case "4":
+                GCD.runGame(roundCount);
+                break;
+            case "5":
+                Progression.runGame(roundCount);
+                break;
+            case "6":
+                Prime.runGame(roundCount);
+                break;
+            case "0":
+                return;
+            default:
+                System.out.println("\nIncorrect input!");
+                break;
+        }
     }
 
     public static String showGreet() {

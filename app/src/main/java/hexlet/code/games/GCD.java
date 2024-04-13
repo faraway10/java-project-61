@@ -5,11 +5,11 @@ import hexlet.code.Engine;
 import java.util.Random;
 
 public class GCD {
-    public static void runGame(int questCount) {
-        String[] questions = new String[questCount];
-        String[] answers = new String[questCount];
+    public static void runGame(int roundCount) {
+        String[] questions = new String[roundCount];
+        String[] answers = new String[roundCount];
 
-        for (var i = 0; i < questCount; i++) {
+        for (var i = 0; i < roundCount; i++) {
             Random random = new Random();
             int firstNum = random.nextInt(100);
             int secondNum = random.nextInt(99) + 1;
