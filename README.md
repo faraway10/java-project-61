@@ -9,27 +9,27 @@
 
 #### Even
 
-![Even: loose](https://sun9-11.userapi.com/impg/liAzQrsj2mmpH5pPiBbyVP2pcfN7tv-vf-13ig/wicRCvU9HNo.jpg?size=581x370&quality=95&sign=d9d9a0080a608b9997977551c593a291&type=album "Even: loose")
+![Even: loose](https://sun9-76.userapi.com/impg/SN0Zv1HHtLvXeyB7XGkkBBPDcpNo0Yv10O_Pig/TQy92GU6JBQ.jpg?size=581x370&quality=95&sign=b2510dae492dd03379399d1bf342642d&type=album "Even: loose")
 
-![Even: win](https://sun9-4.userapi.com/impg/2nEyF6GJ3V0qzDQ7DWUEboyMa_u190_5ffvE4w/EZNkmjkZwQM.jpg?size=581x398&quality=95&sign=a212ea53866c8463a5eb53b66e4d8218&type=album "Even: win")
+![Even: win](https://sun9-11.userapi.com/impg/9vCRVaB4tP_m3oSNXqU7I4yv8X45dS8q72Arwg/2zXC6dV8imY.jpg?size=581x440&quality=95&sign=7a4e2c552a4d9416c263fc4117c9393a&type=album "Even: win")
 
 #### Calc
 
-![Calc: loose](https://sun9-23.userapi.com/impg/MXYqixe7nGamptvOLhTxhFgVrfhFEGJhkPdNXA/fGZW73NAz_8.jpg?size=581x370&quality=95&sign=3bd7015ba564eda6392523894f1a5050&type=album "Calc: loose")
+![Calc: loose](https://sun9-22.userapi.com/impg/m3aGXHttnrih3uoG05UmKTOHOjMbTayJZQePLw/5v7y9UqvKcA.jpg?size=581x370&quality=95&sign=f544c5419fa0c18a84a72d0f427b3092&type=album "Calc: loose")
 
-![Calc: win](https://sun9-19.userapi.com/impg/OCOdDTXwFJ7HwD0ZCmG2sEIPyy9fXkmrdMHATA/iMBYYVH4du4.jpg?size=581x412&quality=95&sign=51c46743b003dee4375edb1eace5b571&type=album "Calc: win")
+![Calc: win](https://sun9-37.userapi.com/impg/tOXHy2VPvqVMCO0zkgLIS7BdJ1deu598gCa6zA/d_oNJGzJICI.jpg?size=581x426&quality=95&sign=9fb1bfbbb05da2babe6d81dc9cfc8210&type=album "Calc: win")
 
 #### GCD
 
-![GCD: loose](https://sun9-30.userapi.com/impg/TOujvx94Qam0IbYsKUuh3a0LnnRoaUjVw-dZyg/bUgzdPYh9Ak.jpg?size=581x370&quality=95&sign=592d9bb631d6b2e877daa2a946c37745&type=album "GCD: loose")
+![GCD: loose](https://sun9-37.userapi.com/impg/650j_BOsPLheUYaveUOnJMfM4hJk4wKl5YBnQw/rcmXrsaozPQ.jpg?size=581x426&quality=95&sign=50b5bf30eeff9c4d2a1e44470317c593&type=album "GCD: loose")
 
-![GCD: win](https://sun9-61.userapi.com/impg/tE536M33UYIKdDuWvNaEUpsq_h_mdwV2VId9IA/v06MhfgRUjA.jpg?size=581x370&quality=95&sign=786bfe866210d831f407294f91146d72&type=album "GCD: win")
+![GCD: win](https://sun9-1.userapi.com/impg/8kWI0wjR4Q1yuP4DboTXQNh6mexeUm-AkDxNRQ/_rf8YsnalmI.jpg?size=581x426&quality=95&sign=fb534a6ac57f1e460bf99778e791c269&type=album "GCD: win")
 
 #### Progression
 
-![Progression: loose](https://sun9-80.userapi.com/impg/hso_oEuwVB6IlcyTHhuhjQo2Qkl4_yrHvZyi5A/RR-Vu80nXgM.jpg?size=581x370&quality=95&sign=c992275917c8e835a8c3fbde9afe66f4&type=album "Progression: loose")
+![Progression: loose](https://sun9-30.userapi.com/impg/rWdJTIDoYEnBjEwMTpLLu6eWmHaW78-s3Dr-QA/1gJbYnA5Kfo.jpg?size=581x384&quality=95&sign=b120946adf1f9e1488ac4b1b3d737216&type=album "Progression: loose")
 
-![Progression: win](https://sun9-19.userapi.com/impg/oTk_VL-RUd1S4-lpEkiAz5oRyDDaLG5L-AmkFw/gkLo9fZacC0.jpg?size=581x440&quality=95&sign=6f8c155313cf2cf9a69d2cf68912e5e7&type=album "Progression: win")
+![Progression: win](https://sun9-22.userapi.com/impg/mHh2xEtzJL0Kn1Ir3aBGlyMJ2QnhoOocDqm-NA/S98D8DkY7NA.jpg?size=581x454&quality=95&sign=732c64657aadbf6fdf3ac62c1d65599e&type=album "Progression: win")
 
 #### Prime
 
