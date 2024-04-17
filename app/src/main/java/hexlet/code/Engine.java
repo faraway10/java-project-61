@@ -1,13 +1,13 @@
 package hexlet.code;
 
 public class Engine {
-    public static final int rounds = 3;
-    public static final int maxRandVal = 99;
+    public static final int ROUNDS = 3;
+    public static final int MAX_RAND = 99;
     public static void runGame(String inviteText, String[][] quizzes) {
         String userName = App.showGreet();
         System.out.println(inviteText);
 
-        for (int i = 0; i < rounds; i++) {
+        for (int i = 0; i < ROUNDS; i++) {
             String question = quizzes[i][0];
             String correctAnswer = quizzes[i][1];
 

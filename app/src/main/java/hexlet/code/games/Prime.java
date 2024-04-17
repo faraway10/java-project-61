@@ -5,10 +5,10 @@ import hexlet.code.Utils;
 
 public class Prime {
     public static void runGame() {
-        String[][] quizzes = new String[Engine.rounds][2];
+        String[][] quizzes = new String[Engine.ROUNDS][2];
 
-        for (var i = 0; i < Engine.rounds; i++) {
-            int num = Utils.generateNumber(0, Engine.maxRandVal);
+        for (var i = 0; i < Engine.ROUNDS; i++) {
+            int num = Utils.generateNumber(0, Engine.MAX_RAND);
 
             quizzes[i][0] = String.valueOf(num);
             quizzes[i][1] = isPrime(num) ? "yes" : "no";

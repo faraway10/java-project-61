@@ -7,12 +7,12 @@ public class Calc {
     public static void runGame() {
         final char[] operators = new char[]{'+', '-', '*'};
         final int secondNumDecreaseVal = 10;
-        String[][] quizzes = new String[Engine.rounds][2];
+        String[][] quizzes = new String[Engine.ROUNDS][2];
 
-        for (var i = 0; i < Engine.rounds; i++) {
+        for (var i = 0; i < Engine.ROUNDS; i++) {
             char operator = operators[Utils.generateNumber(0, operators.length - 1)];
-            int firstNum = Utils.generateNumber(0, Engine.maxRandVal);
-            int secondNum = Utils.generateNumber(0, Engine.maxRandVal);
+            int firstNum = Utils.generateNumber(0, Engine.MAX_RAND);
+            int secondNum = Utils.generateNumber(0, Engine.MAX_RAND);
             int result;
 
             switch (operator) {

@@ -9,11 +9,11 @@ public class Progression {
         final int maxProgressionLen = 10;
         final int minStepVal = 2;
         final int maxStepVal = 9;
-        String[][] quizzes = new String[Engine.rounds][2];
+        String[][] quizzes = new String[Engine.ROUNDS][2];
 
-        for (var i = 0; i < Engine.rounds; i++) {
+        for (var i = 0; i < Engine.ROUNDS; i++) {
             int len = Utils.generateNumber(minProgressionLen, maxProgressionLen);
-            int initNum = Utils.generateNumber(0, Engine.maxRandVal);
+            int initNum = Utils.generateNumber(0, Engine.MAX_RAND);
             int step = Utils.generateNumber(minStepVal, maxStepVal);
             int questNumIndex = Utils.generateNumber(0, len - 1);
 
