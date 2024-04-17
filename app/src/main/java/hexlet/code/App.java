@@ -26,33 +26,29 @@ public class App {
     }
 
     public static void runGameByUserChoice(String userChoice) {
-        final int roundCount = 3;
-        final int maxRandVal = 100;
-
         switch (userChoice) {
             case "1":
                 showGreet();
                 break;
             case "2":
-                Even.runGame(roundCount, maxRandVal);
+                Even.runGame();
                 break;
             case "3":
-                Calc.runGame(roundCount, maxRandVal);
+                Calc.runGame();
                 break;
             case "4":
-                GCD.runGame(roundCount, maxRandVal);
+                GCD.runGame();
                 break;
             case "5":
-                Progression.runGame(roundCount, maxRandVal);
+                Progression.runGame();
                 break;
             case "6":
-                Prime.runGame(roundCount, maxRandVal);
+                Prime.runGame();
                 break;
             case "0":
                 return;
             default:
-                System.out.println("\nIncorrect input!");
-                break;
+                throw new RuntimeException("\nUnknown user choice: " + userChoice);
         }
     }
 

@@ -6,3 +6,6 @@ build:
 
 test:
 	./gradlew test
+
+run-dist-win:
+	.\build\install\app\bin\app

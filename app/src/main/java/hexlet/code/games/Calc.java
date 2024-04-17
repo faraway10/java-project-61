@@ -1,46 +1,41 @@
 package hexlet.code.games;
 
 import hexlet.code.Engine;
-
-import java.util.Random;
+import hexlet.code.Utils;
 
 public class Calc {
-    public static void runGame(int roundCount, int maxRandVal) {
-        String[] questions = new String[roundCount];
-        String[] answers = new String[roundCount];
-        final int maxOperationCodeVal = 3;
+    public static void runGame() {
+        final char[] operators = new char[]{'+', '-', '*'};
         final int secondNumDecreaseVal = 10;
+        String[][] quizzes = new String[Engine.rounds][2];
 
-        for (var i = 0; i < roundCount; i++) {
-            Random random = new Random();
-            int firstNum = random.nextInt(maxRandVal);
-            int secondNum = random.nextInt(maxRandVal);
-            int operationCode = random.nextInt(maxOperationCodeVal);
-            String operation;
+        for (var i = 0; i < Engine.rounds; i++) {
+            char operator = operators[Utils.generateNumber(0, operators.length - 1)];
+            int firstNum = Utils.generateNumber(0, Engine.maxRandVal);
+            int secondNum = Utils.generateNumber(0, Engine.maxRandVal);
             int result;
 
-            switch (operationCode) {
-                case 0:
-                    operation = " + ";
+            switch (operator) {
+                case '+':
                     result = firstNum + secondNum;
                     break;
-                case 1:
-                    operation = " - ";
+                case '-':
                     result = firstNum - secondNum;
                     break;
-                default:
+                case '*':
                     secondNum /= secondNumDecreaseVal;
-                    operation = " * ";
                     result = firstNum * secondNum;
                     break;
+                default:
+                    throw new RuntimeException("Unknown operator: " + operator);
             }
 
-            questions[i] = firstNum + operation + secondNum;
-            answers[i] = String.valueOf(result);
+            quizzes[i][0] = firstNum + " " + operator + " " + secondNum;
+            quizzes[i][1] = String.valueOf(result);
 
         }
 
         String inviteText = "What is the result of the expression?";
-        Engine.runGame(inviteText, questions, answers);
+        Engine.runGame(inviteText, quizzes);
     }
 }
