@@ -5,7 +5,10 @@
 ### CodeClimate Maintainability Badge:
 [![Maintainability](https://api.codeclimate.com/v1/badges/3ef10ab3b4f662cf7a7f/maintainability)](https://codeclimate.com/github/faraway10/java-project-61/maintainability)
 
-### Game examples:
+### Welcome to the Brain Games!
+#### The project offers you five games to train your brain, each game has three rounds.
+#### Start the program, choose a game and play!
+#### Here are game screenshots with loose and win in each game:
 
 #### Even
 

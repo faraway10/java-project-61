@@ -1,5 +1,6 @@
 package hexlet.code.games;
 
+import hexlet.code.App;
 import hexlet.code.Engine;
 import hexlet.code.Utils;
 
@@ -14,8 +15,9 @@ public class Prime {
             quizzes[i][1] = isPrime(num) ? "yes" : "no";
         }
 
+        String userName = App.showGreet();
         String inviteText = "Answer 'yes' if given number is prime. Otherwise answer 'no'.";
-        Engine.runGame(inviteText, quizzes);
+        Engine.runGame(userName, inviteText, quizzes);
     }
 
     public static boolean isPrime(int num) {

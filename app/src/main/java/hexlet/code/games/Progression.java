@@ -1,5 +1,6 @@
 package hexlet.code.games;
 
+import hexlet.code.App;
 import hexlet.code.Engine;
 import hexlet.code.Utils;
 
@@ -24,8 +25,9 @@ public class Progression {
             quizzes[i][1] = answer;
         }
 
+        String userName = App.showGreet();
         String inviteText = "What number is missing in the progression?";
-        Engine.runGame(inviteText, quizzes);
+        Engine.runGame(userName, inviteText, quizzes);
     }
 
     private static String[] getProgressionStringArr(int len, int initNum, int step) {
