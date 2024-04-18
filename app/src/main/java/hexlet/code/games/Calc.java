@@ -25,14 +25,12 @@ public class Calc {
     }
 
     private static int calcNumbersByOperator(int firstNum, int secondNum, char operator) {
-        final int secondNumDecreaseVal = 10;
         switch (operator) {
             case '+':
                 return firstNum + secondNum;
             case '-':
                 return firstNum - secondNum;
             case '*':
-                secondNum /= secondNumDecreaseVal;
                 return firstNum * secondNum;
             default:
                 throw new RuntimeException("Unknown operator: " + operator);
