@@ -1,6 +1,5 @@
 package hexlet.code.games;
 
-import hexlet.code.App;
 import hexlet.code.Engine;
 import hexlet.code.Utils;
 
@@ -16,9 +15,8 @@ public class GCD {
             quizzes[i][1] = String.valueOf(gcd);
         }
 
-        String userName = App.showGreet();
         String inviteText = "Find the greatest common divisor of given numbers.";
-        Engine.runGame(userName, inviteText, quizzes);
+        Engine.runGame(inviteText, quizzes);
     }
 
     private static int gcd(int a, int b) {

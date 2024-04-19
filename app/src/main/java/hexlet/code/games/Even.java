@@ -1,6 +1,5 @@
 package hexlet.code.games;
 
-import hexlet.code.App;
 import hexlet.code.Engine;
 import hexlet.code.Utils;
 
@@ -14,8 +13,7 @@ public class Even {
             quizzes[i][1] = currentNum % 2 == 0 ? "yes" : "no";
         }
 
-        String userName = App.showGreet();
         String inviteText = "Answer 'yes' if the number is even, otherwise answer 'no'.";
-        Engine.runGame(userName, inviteText, quizzes);
+        Engine.runGame(inviteText, quizzes);
     }
 }

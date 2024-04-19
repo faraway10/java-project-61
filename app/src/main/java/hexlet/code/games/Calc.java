@@ -1,6 +1,5 @@
 package hexlet.code.games;
 
-import hexlet.code.App;
 import hexlet.code.Engine;
 import hexlet.code.Utils;
 
@@ -19,9 +18,8 @@ public class Calc {
             quizzes[i][1] = String.valueOf(result);
         }
 
-        String userName = App.showGreet();
         String inviteText = "What is the result of the expression?";
-        Engine.runGame(userName, inviteText, quizzes);
+        Engine.runGame(inviteText, quizzes);
     }
 
     private static int calcNumbersByOperator(int firstNum, int secondNum, char operator) {

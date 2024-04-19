@@ -9,7 +9,7 @@ import hexlet.code.games.Prime;
 public class App {
     public static void main(String[] args) {
         showGameMenu();
-        String userChoice = Cli.getUserInput();
+        String userChoice = Engine.getUserInput();
         runGameByUserChoice(userChoice);
     }
 
@@ -28,7 +28,7 @@ public class App {
     public static void runGameByUserChoice(String userChoice) {
         switch (userChoice) {
             case "1":
-                showGreet();
+                Engine.showGreet();
                 break;
             case "2":
                 Even.runGame();
@@ -50,14 +50,5 @@ public class App {
             default:
                 throw new RuntimeException("\nUnknown user choice: " + userChoice);
         }
-    }
-
-    public static String showGreet() {
-        String userName;
-        System.out.println("\nWelcome to the Brain Games!");
-        System.out.print("May I have your name? ");
-        userName = Cli.getUserInput();
-        System.out.println("Hello, " + userName + "!");
-        return userName;
     }
 }
