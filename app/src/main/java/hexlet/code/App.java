@@ -6,10 +6,13 @@ import hexlet.code.games.GCD;
 import hexlet.code.games.Progression;
 import hexlet.code.games.Prime;
 
+import java.util.Scanner;
+
 public class App {
     public static void main(String[] args) {
         showGameMenu();
-        String userChoice = Engine.getUserInput();
+        Scanner scan = new Scanner(System.in);
+        String userChoice = scan.next();
         runGameByUserChoice(userChoice);
     }
 
@@ -28,7 +31,7 @@ public class App {
     public static void runGameByUserChoice(String userChoice) {
         switch (userChoice) {
             case "1":
-                Engine.showGreet();
+                showGreet();
                 break;
             case "2":
                 Even.runGame();
@@ -50,5 +53,13 @@ public class App {
             default:
                 throw new RuntimeException("\nUnknown user choice: " + userChoice);
         }
+    }
+
+    public static void showGreet() {
+        Scanner scan = new Scanner(System.in); // dry
+        System.out.println("\nWelcome to the Brain Games!");
+        System.out.print("May I have your name? ");
+        String userName = scan.next();
+        System.out.println("Hello, " + userName + "!"); // dry
     }
 }

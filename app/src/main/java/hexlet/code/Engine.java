@@ -6,7 +6,12 @@ public class Engine {
     public static final int ROUNDS = 3;
     public static final int MAX_RAND = 99;
     public static void runGame(String inviteText, String[][] quizzes) {
-        String userName = showGreet();
+        Scanner scan = new Scanner(System.in); // dry
+        System.out.println("\nWelcome to the Brain Games!");
+        System.out.print("May I have your name? ");
+        String userName = scan.next();
+        System.out.println("Hello, " + userName + "!"); // dry
+
         System.out.println(inviteText);
 
         for (String[] quiz : quizzes) {
@@ -15,7 +20,7 @@ public class Engine {
 
             System.out.println("Question: " + question);
             System.out.print("Your answer: ");
-            String userAnswer = getUserInput();
+            String userAnswer = scan.next();
 
             if (userAnswer.equalsIgnoreCase(correctAnswer)) {
                 System.out.println("Correct!");
@@ -28,19 +33,5 @@ public class Engine {
         }
 
         System.out.println("Congratulations, " + userName + "!");
-    }
-
-    public static String getUserInput() {
-        Scanner scan = new Scanner(System.in);
-        return scan.next();
-    }
-
-    public static String showGreet() {
-        String userName;
-        System.out.println("\nWelcome to the Brain Games!");
-        System.out.print("May I have your name? ");
-        userName = getUserInput();
-        System.out.println("Hello, " + userName + "!");
-        return userName;
     }
 }
