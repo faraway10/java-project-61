@@ -4,13 +4,12 @@ import java.util.Scanner;
 
 public class Engine {
     public static final int ROUNDS = 3;
-    public static final int MAX_RAND = 99;
     public static void runGame(String inviteText, String[][] quizzes) {
-        Scanner scan = new Scanner(System.in); // dry
+        Scanner scan = new Scanner(System.in);
         System.out.println("\nWelcome to the Brain Games!");
         System.out.print("May I have your name? ");
         String userName = scan.next();
-        System.out.println("Hello, " + userName + "!"); // dry
+        System.out.println("Hello, " + userName + "!");
 
         System.out.println(inviteText);
 

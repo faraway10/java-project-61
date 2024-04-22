@@ -5,13 +5,14 @@ import hexlet.code.Utils;
 
 public class Calc {
     public static void runGame() {
+        final int maxRand = 99;
         final char[] operators = new char[]{'+', '-', '*'};
         String[][] quizzes = new String[Engine.ROUNDS][2];
 
         for (var i = 0; i < Engine.ROUNDS; i++) {
             char operator = operators[Utils.generateNumber(0, operators.length - 1)];
-            int firstNum = Utils.generateNumber(0, Engine.MAX_RAND);
-            int secondNum = Utils.generateNumber(0, Engine.MAX_RAND);
+            int firstNum = Utils.generateNumber(0, maxRand);
+            int secondNum = Utils.generateNumber(0, maxRand);
             int result = calcNumbersByOperator(firstNum, secondNum, operator);
 
             quizzes[i][0] = firstNum + " " + operator + " " + secondNum;
