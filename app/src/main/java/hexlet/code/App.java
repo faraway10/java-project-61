@@ -56,10 +56,10 @@ public class App {
     }
 
     public static void showGreet() {
-        Scanner scan = new Scanner(System.in); // dry
+        Scanner scan = new Scanner(System.in);
         System.out.println("\nWelcome to the Brain Games!");
         System.out.print("May I have your name? ");
         String userName = scan.next();
-        System.out.println("Hello, " + userName + "!"); // dry
+        System.out.println("Hello, " + userName + "!");
     }
 }
